@@ -9,8 +9,9 @@
       />
       <button type="button" v-on:click="handleSubmit">Add</button>
     </div>
-    <div class="todolist" v-for="(todo, index) in todos">
+    <div class="todolist">
       <todo-item
+        v-for="(todo, index) in todos"
         :id="index"
         :todo="todo"
         :handleDelete="deleteTodo"
